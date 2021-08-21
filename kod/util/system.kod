@@ -3403,6 +3403,7 @@ messages:
       Send(self,@CreateOneSpellIfNew,#num=SID_MEDITATE,#class=&Meditate);
       Send(self,@CreateOneSpellIfNew,#num=SID_SET,#class=&Set);
       Send(self,@CreateOneSpellIfNew,#num=SID_LOADOUT,#class=&Loadout);
+      Send(self,@CreateOneSpellIfNew,#num=SID_VAULT_LOADOUT,#class=&VaultLoadout);
       Send(self,@CreateOneSpellIfNew,#num=SID_CONVEYANCE,#class=&Conveyance);
 	  Send(self,@CreateOneSpellIfNew,#num=SID_TRANSFERENCE,#class=&Transference);
       Send(self,@CreateOneSpellIfNew,#num=SID_PHASE,#class=&Phase);
@@ -5505,6 +5506,7 @@ messages:
       plItemTemplates = cons(create(&WindScroll),plItemTemplates);
       plItemTemplates = cons(create(&SetScroll),plItemTemplates);
       plItemTemplates = cons(create(&LoadoutScroll),plItemTemplates);
+      plItemTemplates = cons(create(&VaultLoadoutScroll),plItemTemplates);
       plItemTemplates = cons(create(&MirthScroll),plItemTemplates);
       plItemTemplates = cons(create(&MelancholyScroll),plItemTemplates);
 
